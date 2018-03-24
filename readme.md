@@ -22,6 +22,16 @@ Requirements
 
 * PHP >= 7.1
 
+
+Conclusion
+==========
+
+I decided to choose Laravel Lumen for that project. 
+A note of my solution for the endpoint to get the total score of ratings for one comment:
+I do not like it to deliver custom endpoints, as I want to play by the rules of an RESTful API.
+If you call a comment via API you retrieve the comment including all the ratings by default. 
+You can count the total score on the response.  
+
 Includes
 ========
 
