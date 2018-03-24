@@ -11,6 +11,11 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+
+$router->post('rate', [
+    'uses' => 'RatingController@store'
+]);
+
+$router->get('comment/{commentId}/', [
+    'uses' => 'CommentController@show'
+]);
