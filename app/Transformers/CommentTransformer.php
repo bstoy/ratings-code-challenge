@@ -53,7 +53,7 @@ class CommentTransformer extends TransformerAbstract
     public function includeRatings(Comment $comment)
     {
         return $this->collection(
-            $comment->ratings, new RatingsTransformer(), 'ratings'
+            $comment->ratings, new RatingTransformer(), 'ratings'
         );
     }
 
